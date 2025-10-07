@@ -14,12 +14,27 @@ body {
   color: #333;
 }
 
-header, footer {
+footer {
   background-color: #2c3e50;
   color: white;
   padding: 1em;
   text-align: center;
 }
+
+.header-katamath {
+  background-image: url('fuji.png'); /* ton image */
+  background-size: cover;       /* remplit tout le header */
+  background-position: center;  /* centré */
+  background-repeat: no-repeat; /* pas de répétition */
+  height: 300px;                /* hauteur du header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  font-size: 2em;
+}
+
 
 .header-katamath h1 {
   font-size: 5em;

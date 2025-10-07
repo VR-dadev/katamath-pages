@@ -55,7 +55,7 @@ a:hover {
 }
 
 .logo-link img {
-  width: 200px; /* adapte selon ton visuel */
+  width: 50%;
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;

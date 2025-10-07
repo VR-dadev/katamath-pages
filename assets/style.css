@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Julee-Regular';
+  src: url('fonts/Julee-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -13,6 +20,15 @@ header, footer {
   padding: 1em;
   text-align: center;
 }
+
+header h1 {
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Julee-Regular', sans-serif;
+}
+
 
 main {
   padding: 2em;
@@ -32,3 +48,51 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.logo-link {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.logo-link img {
+  width: 200px; /* adapte selon ton visuel */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logo-link img:hover {
+  transform: scale(1.1);
+}
+
+.descriptif {
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.descriptif {
+  background-color: #f0f8ff;
+  border-left: 6px solid #2980b9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.descriptif {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

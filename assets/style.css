@@ -21,7 +21,7 @@ header, footer {
   text-align: center;
 }
 
-header h1 {
+.header-katamath h1 {
   font-size: 5em;
   font-weight: bold;
   text-align: center;
@@ -96,3 +96,7 @@ a:hover {
   }
 }
 
+.material-symbols-outlined {
+  font-size: 20px;
+  vertical-align: middle;
+}

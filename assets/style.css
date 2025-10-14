@@ -22,26 +22,39 @@ footer {
 }
 
 .header-katamath {
-  background-image: url('fuji.png'); /* ton image */
-  background-size: cover;       /* remplit tout le header */
-  background-position: center;  /* centré */
-  background-repeat: no-repeat; /* pas de répétition */
-  height: 300px;                /* hauteur du header */
+  background-image: url('fuji.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  flex-direction: column;       /* empile verticalement */
+  align-items: center;          /* centre horizontalement */
+  justify-content: center;      /* centre verticalement */
+  color: black;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
   font-size: 2em;
+  position: relative;           /* utile si tu veux superposer d'autres éléments */
+  overflow: hidden;             /* évite les débordements */
+  padding-top: 10px;
+  padding-bottom: 20px;
+  line-height: 1.1;
 }
+
 
 
 .header-katamath h1 {
   font-size: 5em;
   font-weight: bold;
   text-align: center;
-  margin-top: 30px;
-  font-family: 'Julee-Regular', sans-serif;
+  margin: 0;                    /* supprime le décalage vertical */
+  font-family: 'Julee-Regular', sans-serif;  
+}
+
+.header-katamath h2 {
+  color: black;
+  font-size: 1.5em;
+  margin: 0;
 }
 
 

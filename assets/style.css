@@ -44,7 +44,7 @@ footer {
 
 
 .header-katamath h1 {
-  font-size: 5em;
+  font-size: clamp(5rem, 8vw, 10rem); /* min, dynamique, max */
   font-weight: bold;
   text-align: center;
   margin: 0;                    /* supprime le décalage vertical */
@@ -53,7 +53,7 @@ footer {
 
 .header-katamath h2 {
   color: black;
-  font-size: 1.5em;
+  font-size: clamp(1.5rem, 8vw, 3rem); /* min, dynamique, max */
   margin: 0;
 }
 

@@ -24,4 +24,15 @@
     window.addEventListener('resize', updateCarousel);
 }
 
+// Gestion du header dynamique au scroll
+const header = document.querySelector('.header-katamath');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
 lancerJeu()
